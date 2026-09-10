@@ -1,0 +1,103 @@
+#:rendering{:label "粵語",
+            :source
+            {:text :oshb-wlc,
+             :corpus :tanakh,
+             :verses 23213,
+             :tokens 305507},
+            :provenance
+            {:derived
+             [:lang
+              :version
+              :label
+              :status
+              :lineage
+              :source
+              :rails
+              :rails-commit
+              :name-seat
+              :models
+              :tiers
+              :produced
+              :license
+              :catalog],
+             :declared
+             [:role :open-questions :rendering/adjudication]},
+            :role :served,
+            :produced {:from "2026-09-10", :to "2026-09-10"},
+            :id "yue.v1",
+            :catalog {:ui nil},
+            :license "CC BY-SA 4.0 (The Selah Cantonese Rendering)",
+            :model
+            {:provider :z.ai,
+             :models {"glm-5.3" 23213},
+             :tiers {"glm-5.2" 23198, "glm-5.3" 15},
+             :prompt "selah.translate.prompt",
+             :canonical-forms "data/translation/canonical-forms.edn"},
+            :discipline
+            {:rails "docs/methodology/translation-discipline/yue.md",
+             :rails-commit "b984b32e",
+             :foundation
+             [:hebrew-first
+              :deut-6-4-double-fidelity
+              :no-foreknowledge
+              :aleph-tav-total
+              :fills-bracketed
+              :no-translator-notes
+              :tough-verse-lay-it-bare],
+             :name-seat
+             {"אל" "以勒",
+              "אלהים" "以羅欣",
+              "אלוה" "以羅亞",
+              "יה" "雅",
+              "יהוה" "雅威",
+              "צבאות" "采巴奧特",
+              "שדי" "沙代"},
+             :open-questions
+             ["B1/B2 — THE PARTICLE RULING (rails gap): sentence-final particles banned wholesale (579 stand) AND 嗎→咩 maps onto the banned list — no Cantonese yes/no device named"
+              "B3 half-width punctuation 68,692"
+              "B5 Hebrew-inline scope beyond נפש/חסד/שאול (101 words, ~250 tokens)"
+              "B6 empty glosses 188 · B7 ellipsis-gloss convention 11,656 · B8 parenthetical glosses 481"
+              "B9-B16 small classes (yue-tekoa-report.md tally)"]},
+            :status :live,
+            :adjudication
+            {:chair 68,
+             :first :cantonese,
+             :polarity :hantsz-home,
+             :seal
+             {:et-flow 11866,
+              :verses 23213,
+              :register-ratio [1501 1],
+              :aleph-tav [],
+              :yahweh-name-seat [6827 6827],
+              :elohim-flow 2390,
+              :jiang-at-marker 0,
+              :et-row 11866,
+              :yahweh-flow 6869,
+              :spine-vs-en [23213 23213],
+              :erasure [0 0 0 0 0 0 0]},
+             :tekoa
+             {:verdict "do not seat yue on this burn",
+              :verdict-discharged
+              "114 rule-6 verses re-rendered (temp 0.55 → glm-5.3 → 3 hand-adjudicated); +5 tics found outside the list; ~1,530 class-A field edits applied; all seal counts green",
+              :class-a-applied 1530,
+              :class-b-filed 16,
+              :report
+              "data/experiments/yue-seating/yue-tekoa-report.md"},
+             :cruxes
+             ["register trap HELD — 嘅:的 1,501:1; pronoun 他 zero; 沒 zero; A16 copula/locative repaired"
+              "將/⟨את⟩ twin trap HELD — 1,417 fronting verses, zero marker replacements"
+              "rule-6 burn: 114 self-corrections printed in flow — the Tekoa verdict; discharged at seating"
+              "Dan 3:12 FIFTEENTH — יתהון bare pronoun 佢哋 per siblings"
+              "Simplified sweep: 182-pair inventory; homograph traps 后/台/晒/采/着 enumerated lawful"
+              "Hebrew-inline per zh precedent: נפש 1,578 · חסד 511 · שאול fork 掃羅 407 / inline 58"
+              "composite-numeral trap: Num 25:9 + 26:50 hand-rendered literal (四同二十千)"]},
+            :version "v1",
+            :lineage
+            {:git
+             {:repo "selah-project/selah-yue",
+              :ref "v1-final",
+              :commit nil,
+              :tags [],
+              :branches []},
+             :parents []},
+            :lang :yue}
