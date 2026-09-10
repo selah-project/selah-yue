@@ -96,8 +96,8 @@
             {:git
              {:repo "selah-project/selah-yue",
               :ref "v1-final",
-              :commit nil,
-              :tags [],
-              :branches []},
+              :commit "473764fc",
+              :tags ["v1-final"],
+              :branches ["main"]},
              :parents []},
             :lang :yue}
